@@ -39,19 +39,18 @@ void cikar(){
 	
 	}		
 void yazdir(){
-	int sayi;
+	if(top==-1){
+printf("dizi bostur:\n");
+}
+else{
 printf("dizi:");
 	for(int i=0;i<=top;i++){
 		printf("%d ",dizi[i]);
-		if(i==top){
-			sayi=dizi[i];
-			}
 		}
-		printf("%d.sayi cikarildi:",sayi);
 	printf("\n");
 	
 	}	
-	
+}
 	main(){
 	int kontrol=1,tekrar=0,b;
 	int secim;
@@ -85,7 +84,8 @@ printf("dizi:");
 		yazdir();
 	break;
 	case 4:
-		printf("cikis yapildi:");
+		printf("cikis yapildi:\n");
+		break;
 	default:
 	printf("boyle bir secim yok");
 	
